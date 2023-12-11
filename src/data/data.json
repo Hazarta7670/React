@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "name": "Ivan Ivanov",
+            "team": "Dunav Ruse",
+            "time": 600,
+            "points": 14
+        }, 
+        {
+            "name": "Marin Kolev",
+            "team" : "Cherno More Varna",
+            "time": 820,
+            "points": 12
+        },
+        {
+            "name": "Stanimir Stoilov",
+            "team": "Lukoil Neftohimik",
+            "time": 250,
+            "points": 20
+        },
+        {
+            "name": "Hristo Hristov",
+            "team": "Dunav Ruse",
+            "time": 60,
+            "points": 18
+        },
+        {
+            "name": "Mitko Martinov",
+            "team":"Lukoil Neftohimik",
+            "time": 160,
+            "points": 40
+        },
+        {
+            "name": "Marin Kolev",
+            "team":"Cherno More Varna",
+            "time": 120,
+            "points": 29
+        },
+        {
+            "name": "Hristo Hristov",
+            "team":"Dunav Ruse",
+            "time": 160,
+            "points": 18
+        }
+    ]
+}
