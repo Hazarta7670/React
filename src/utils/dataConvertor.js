@@ -9,9 +9,9 @@ function filteringArray(array) {
 }
 
 function creatingDataMAtrix(filteredArray) {
-    return filteredArray.map((row) => 
-        row.split(',').map((el) => el.trim())
-    )
+    return filteredArray.map((row) => {
+        return row.split(',').map((el) => el.trim())
+    })
 }
 
-export { splitingStringByNewLines, filteringArray, creatingDataMAtrix }
+export { splitingStringByNewLines, filteringArray, creatingDataMAtrix}

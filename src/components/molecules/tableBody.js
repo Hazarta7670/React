@@ -1,7 +1,8 @@
 import React from "react";
 
-function TableBody({data}) {
+function TableBody({data, setData}) {
     let index = 0
+
     return (
         <tbody>
             {data.map((row) => {

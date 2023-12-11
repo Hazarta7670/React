@@ -19,11 +19,8 @@ function MostPointsByTimePlayed() {
     d.sort((a,b) => b[3]/b[2] - a[3]/a[2])
 
     return (
-        <>
-            <NavLink to='/' state={{data: data}}>Home Page</NavLink>
-            <NavLink to='/MostPointsScoredInOneMatch' state={{data: data}}>Table for most points scored in one match</NavLink>
-            <NavLink to='/MostPointsInAllMatches' state={{data: data}}>Table for most point scored in all matches</NavLink>
-            <NavLink to='/MostPointsInTeam' state={{data: data}}>Table for most points scored in the team</NavLink>
+        <>  
+            <NavLink to='/'>Home Page</NavLink>
             <Table data={d}/>
         </>
     )

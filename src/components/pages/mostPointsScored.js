@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "../organism/table";
-import { useLocation, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function MostPointsScored() {
     const location = useLocation()
@@ -9,10 +9,7 @@ function MostPointsScored() {
 
     return (
         <>  
-            <NavLink to='/' state={{data: data}}>Home Page</NavLink>
-            <NavLink to='/MostPointsInAllMatches' state={{data: data}}>Table for most point scored in all matches</NavLink>
-            <NavLink to='/MostPointsByTimePLayed' state={{data: data}}>Table for most points scored based on time played</NavLink>
-            <NavLink to='/MostPointsInTeam' state={{data: data}}>Table for most points scored in the team</NavLink>
+            <NavLink to='/'>Home Page</NavLink>
             <Table data={data}/>
         </>
     )

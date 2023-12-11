@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, json } from 'react-router-dom';
 import Header2 from "../atoms/header2";
 import Label from "../atoms/label";
 import Input from "../atoms/input";
-import data from '../../data/data';
+import data from '../../data/data.json';
 
 function Form() {
     const [player, setPlayer] = useState('')
@@ -13,8 +13,13 @@ function Form() {
 
     function adding_player(e) {
         e.preventDefault()
-        data.push([player, team, points, timePlayed])
-        console.log(data)
+        let body = {
+            'name': player,
+            'team': team,
+            'points': points,
+            'time': timePlayed
+        }
+        data.data.push(body)
         setPlayer('')
         setTeam('')
         setPoints('')
@@ -25,7 +30,6 @@ function Form() {
         <>
             <header>
                 <NavLink to='/'>Home Page</NavLink>
-                <NavLink to='/MostPointsScored'>Table for most points scored</NavLink>
             </header>
             <form className="form" onSubmit={adding_player}>
                 <Header2 text='Add Player Stats'/>
